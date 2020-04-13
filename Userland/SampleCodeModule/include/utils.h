@@ -5,7 +5,6 @@
 #include <stdarg.h>
 #include <syscalls.h>
 #include <naiveConsole.h>
-#include <graphicsLibrary.h>
 
 #define SECONDS 0
 #define MINUTES 1
@@ -50,5 +49,7 @@ void getDate(char * buff);
 void print(const char * str);
 
 void printN(const char * str, int length);
+
+void clearScreen();
 
 #endif

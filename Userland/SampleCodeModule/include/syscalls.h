@@ -14,7 +14,6 @@
 #define SLEEP 6
 #define DATE 7
 #define CLEAR 8
-#define DRAW_PIXEL 9
 #define OVER_CLOCK 10
 #define SHUTDOWN 11
 
@@ -33,8 +32,6 @@ void sys_sleep(int ticks);
 void sys_beep(int freq, int time);
 
 uint64_t sys_get_ticks(void);
-
-void sys_draw_pixel(int x, int y, int r, int g, int b);
 
 void sys_clear_console(void);
 

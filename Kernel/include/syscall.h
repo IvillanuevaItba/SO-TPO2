@@ -19,7 +19,6 @@
 #define SLEEP 6
 #define DATE 7
 #define CLEAR 8
-#define DRAW_PIXEL 9
 #define OVER_CLOCK 10
 #define SHUTDOWN 11
 

@@ -48,9 +48,6 @@ uint64_t handleSyscall(uint64_t rdi, uint64_t rsi, uint64_t rdx, uint64_t rcx, u
 		case CLEAR:
 			handle_sys_clear_console();
 		break;
-		case DRAW_PIXEL:
-			handle_sys_draw_pixel(rsi, rdx, rcx, r8, r9);
-		break;
 		case TICKS:
 			handle_sys_get_ticks((int *)rdx);
 		break;
@@ -79,12 +76,6 @@ void handle_sys_clear_console(void){
 	clear_console();
 }
 
-//Handler para la system draw pixel
-void handle_sys_draw_pixel(int x, int y, int r, int g, int b){
-	Vector2 auxPos = {x,y};
-	Color auxColor = {r,g,b};
-	draw_pixel(auxPos, auxColor);
-}
 
 //Handler para la system read
 //El fd es el File Descriptor, no lo utilizamos porque no es necesario en nuestro caso

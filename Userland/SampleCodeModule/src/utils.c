@@ -361,3 +361,7 @@ void print(const char * str){
 void printN(const char * str, int length){
   sys_write(1,str,length);
 }
+
+void clearScreen(){
+	sys_clear_console();
+}

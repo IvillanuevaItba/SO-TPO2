@@ -4,9 +4,7 @@
 #include <stdint.h>
 #include <naiveConsole.h>
 #include <utils.h>
-#include <graphicsLibrary.h>
 #include <types.h>
-#include <snakeGame.h>
 
 #define MAX_BUFF_SIZE 750
 

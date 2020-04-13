@@ -41,10 +41,6 @@ void sys_sleep(int ticks){
 	_int80((uint64_t)SLEEP, 0, 0, (uint64_t)ticks, 0, 0);
 }
 
-void sys_draw_pixel(int x, int y, int r, int g, int b){
-	_int80((uint64_t)DRAW_PIXEL, (uint64_t)x, (uint64_t)y, (uint64_t)r, (uint64_t)g, (uint64_t)b);
-}
-
 void sys_clear_console(void){
 	_int80((uint64_t)CLEAR, 0, 0, 0, 0, 0);
 }
