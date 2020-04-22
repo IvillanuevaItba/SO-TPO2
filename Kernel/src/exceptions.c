@@ -31,10 +31,10 @@ void loadExceptions(){
 
     //Loading Exceptions
     _cli();
-    setup_IDT_entry(0x00, (uint64_t) &_exception00Handler);
-    setup_IDT_entry(0x06, (uint64_t) &_exception06Handler);
-    setup_IDT_entry(0x0D, (uint64_t) &_exception13Handler);
-    setup_IDT_entry(0x0E, (uint64_t) &_exception14Handler);
+    setup_IDT_entry(0x00, (uint64_t) &_exception00Handler); // 0 divison
+    setup_IDT_entry(0x06, (uint64_t) &_exception06Handler); // invalid opcode
+    setup_IDT_entry(0x0D, (uint64_t) &_exception13Handler); // ??
+    setup_IDT_entry(0x0E, (uint64_t) &_exception14Handler); // ??
     _sti();
 }
 
